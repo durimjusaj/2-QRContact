@@ -2,5 +2,5 @@ QRContact - Share Contacts in Easy Way.
 
 Authors:
 
-Durim Jusaj
+Durim Jusaj,
 Fisnik Alidemi
