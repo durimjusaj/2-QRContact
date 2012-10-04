@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/header" />
+
+    <EditText
+        android:id="@+id/search_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/search_"
+        android:inputType="text" >
+    </EditText>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/search_input"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="#fff"
+        android:dividerHeight="1dp"
+        tools:listitem="@layout/qrcontact_list_holder" >
+    </ListView>
+
+</RelativeLayout>

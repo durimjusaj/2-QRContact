@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">QRKontakt</string>
+    <string name="app_picker_name">Anwendungen</string>
+    <string name="my_qrcontact">Mein QRKontakt</string>
+    <string name="share_my_qrcontact">Teile meiner QRKontakt</string>
+    <string name="done">Fertig</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="name">Name:</string>
+    <string name="surname">Familienname:</string>
+    <string name="number">Number:</string>
+    <string name="email">Email:</string>
+    <string name="qrcontact_reader">QRKontakt Leser</string>
+    <string name="save">Speichern</string>
+    <string name="contact_added_message">Kontakt Erfolgreich Hinzugefügt</string>
+    <string name="contact_added_error_message">Kontakt Hinzugefügt Erfolglos</string>
+    <string name="fields_required">Alle Felder Sind Pflichtfelder.</string>
+    <string name="contact_added_exists_message">Kontakt bereits vorhanden.</string>
+    <string name="contact_added_update_message">Erfolgreich Aktualisiert Kontakt</string>
+    <string name="contact_added_title">Kontakt</string>
+    <string name="call">Rufen</string>
+    <string name="share">Share</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="delete">Löschen</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="succes_saved">Gespeichert</string>
+    <string name="sms">SMS senden</string>
+    <string name="email_check">E-Mail ist nicht gültig!</string>
+    <string name="no_data">Sie haben noch keine Daten zu teilen</string>
+    <string name="contact_delete_title">Kontakt löschen</string>
+    <string name="contact_option_title">Optionen</string>
+    <string name="contact_delete_message">Möchten Sie diesen Kontakt löschen?</string>
+    <string name="dialog_email">Email</string>
+    <string name="search_">Suchen Kontakt</string>
+    <string name="loading">Lädt</string>
+    <string name="loading_contacts">Lädt Kontakte</string>
+</resources>

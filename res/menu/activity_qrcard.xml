@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/reader_camera"
+        android:orderInCategory="100"
+        android:title="@string/qrcontact_reader"/>
+    <item
+        android:id="@+id/my_qrcontact"
+        android:orderInCategory="100"
+        android:title="@string/my_qrcontact"/>
+    <item
+        android:id="@+id/share_my_qrcontact"
+        android:orderInCategory="100"
+        android:title="@string/share_my_qrcontact"/>
+
+</menu>
