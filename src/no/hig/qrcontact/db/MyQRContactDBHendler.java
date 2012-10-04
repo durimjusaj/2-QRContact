@@ -9,7 +9,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 public class MyQRContactDBHendler extends SQLiteOpenHelper {
 
@@ -116,7 +115,6 @@ public class MyQRContactDBHendler extends SQLiteOpenHelper {
 		values.put(KEY_NUMBER, m.getNumber());
 		values.put(KEY_EMAIL, m.getEmail());
 		values.put(KEY_SHARE, m.getShare());
-		Log.d("Email", m.getId() + "");
 		// updating row return
 		int update = db.update(TABLE_CONTATCS, values, KEY_ID + " = ?",
 				new String[] { String.valueOf(m.getId()) });

@@ -19,7 +19,6 @@
         android:theme="@style/AppTheme" >
         <activity android:name="no.hig.qrcontact.QRImageGeneratorActivity"></activity>
         <activity android:name="no.hig.qrcontact.QRContactReaderActivity"></activity>
-        <activity android:name="no.hig.qrcontact.QRContactMainActivity"></activity>
         <activity android:name="no.hig.qrcontact.QRContactListActivity"></activity>
         <activity android:name="no.hig.qrcontact.MyQRContactActivity"></activity>
         <activity android:name="QRContactEditActivity"></activity>

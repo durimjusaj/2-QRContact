@@ -133,7 +133,7 @@ public class Contact implements Serializable {
 
 			return new String(out.toByteArray());
 		} catch (IOException e) {
-			e.printStackTrace();
+			// e.printStackTrace();
 		}
 		return null;
 	}
@@ -144,7 +144,7 @@ public class Contact implements Serializable {
 			return new ObjectInputStream(new Base64InputStream(new ByteArrayInputStream(encodedObject.getBytes()), 192))
 					.readObject();
 		} catch (Exception e) {
-			e.printStackTrace();
+			// e.printStackTrace();
 		}
 		return null;
 	}

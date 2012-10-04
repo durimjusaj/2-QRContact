@@ -41,33 +41,37 @@ public class QRCodeGenerator {
 			ByteBuffer bbuf = encoder.encode(CharBuffer.wrap(this.data));
 			b = bbuf.array();
 		} catch (CharacterCodingException e) {
-			System.out.println(e.getMessage());
+			// System.out.println(e.getMessage());
 		}
 
 		String encodeData = "";
 		try {
 			encodeData = new String(b, "ISO-8859-1");
 		} catch (UnsupportedEncodingException e) {
-			System.out.println(e.getMessage());
+			// System.out.println(e.getMessage());
 		}
 
 		// get a byte matrix for the data
 		BitMatrix matrix = null;
 
-		Bitmap mBitmap = Bitmap.createBitmap(this.width, this.height, Config.ARGB_8888);
+		Bitmap mBitmap = Bitmap.createBitmap(this.width, this.height,
+				Config.ARGB_8888);
 		Writer writer = new QRCodeWriter();
 		try {
-			matrix = writer.encode(encodeData, com.google.zxing.BarcodeFormat.QR_CODE, this.width, this.height);
+			matrix = writer.encode(encodeData,
+					com.google.zxing.BarcodeFormat.QR_CODE, this.width,
+					this.height);
 
 			for (int i = 0; i < this.height; i++) {
 				for (int j = 0; j < this.width; j++) {
-					mBitmap.setPixel(j, i, matrix.get(j, i) ? Color.BLACK : Color.WHITE);
+					mBitmap.setPixel(j, i, matrix.get(j, i) ? Color.BLACK
+							: Color.WHITE);
 				}
 			}
 		} catch (com.google.zxing.WriterException e) {
-			System.out.println(e.getMessage());
+			// System.out.println(e.getMessage());
 		}
-		
+
 		return mBitmap;
 	}
 

@@ -91,11 +91,9 @@ public class QRContactReaderActivity extends Activity implements
 		try {
 			beep.prepare();
 		} catch (IllegalStateException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 
 		scanButton = (Button) findViewById(R.id.cancel_button);
@@ -203,7 +201,6 @@ public class QRContactReaderActivity extends Activity implements
 	@Override
 	public void onSensorChanged(SensorEvent event) {
 		if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-			// the values you were calculating originally here were over 10000!
 			draw.setX(event.values[0]);
 			draw.setY(event.values[1]);
 
@@ -213,7 +210,6 @@ public class QRContactReaderActivity extends Activity implements
 
 	@Override
 	protected void onResume() {
-		// TODO Auto-generated method stub
 		super.onResume();
 		if (sensor != null) {
 			sensorManager.registerListener(this, sensor,
