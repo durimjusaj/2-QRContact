@@ -113,7 +113,6 @@ public class QRContactListActivity extends ListActivity {
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 
 		Contact c = contactList.get(position);
-		Log.d("ContactID", "ID: " + c.getId());
 		ShowListContactAlert(c);
 
 	};
@@ -225,6 +224,7 @@ public class QRContactListActivity extends ListActivity {
 				if (contactDb.addContact(c)) {
 					alerts.ShowAddedAlert(QRContactAlertType.SUCCES);
 					contactList.add(c);
+					contactListTemp.add(c);
 					listAdapter.notifyDataSetChanged();
 				} else {
 					alerts.ShowAddedAlert(QRContactAlertType.EXISTS);
